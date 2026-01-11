@@ -1197,6 +1197,7 @@ public class Tests13 : Base
     }
 
     [Test]
+    ///[Ignore("System.Drawing is not supported on macOS")]
     [Platform("win")]
     public void Font_Clone()
     {
