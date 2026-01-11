@@ -16,6 +16,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json.Nodes;
+using System.Xml.Serialization;
 using Microsoft.EntityFrameworkCore;
 using YantraJs.Impl;
 
@@ -1198,7 +1199,7 @@ public class Tests13 : Base
 
     [Test]
     ///[Ignore("System.Drawing is not supported on macOS")]
-    [Platform("win")]
+    [Platform(Include = "win, macosx")]
     public void Font_Clone()
     {
         // Arrange
