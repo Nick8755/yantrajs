@@ -1198,6 +1198,7 @@ public class Tests13 : Base
 
     [Test]
     [Platform("win")]
+    
     public void Font_Clone()
     {
         // Arrange
